@@ -3,119 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Nike shoes</title>
-  <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  }
-
-  .container {
-    display: flex;
-    border: 1px solid black;
-    justify-content: space-between;
-
-  }
-  .blank{
-    display: flex;
-    flex-basis: 200px;
-  }
-  .content{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 25em;
-    margin: 0;
-  }
-
-  .price {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    font-size: 20px;
-  }
-
-  .shoe-name {
-    font-size: 30px;
-  }
-
-  table {
-
-    border: 1px solid rgba(118, 121, 127, 0.5);
-    table-layout: fixed;
-    width: 20em;
-    margin: 20px 20px 20px 0px;
-  }
-  
-  td {
-    border:  1px solid rgba(118, 121, 127, 0.5);
-    text-align: center;
-    width: 10px;
-    font-size: 25px;
-    padding: 10px;
-
-  }
-
-  td:hover {
-    border: 1px solid black;
-    opacity: 1;
-  }
-
-
-
-  .hidden {
-    display: none;
-  }
-
-  .add-cart-main {
-    display: flex
-    justify-content: space-between;
-    margin: 20px 0px 20px 0px;
-    
-    
-  }
-
-  .add-cart, .heart {
-    text-transform: uppercase;
-    font-size: 25px;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    opacity: 1
-  }
-
-
-  .heart:hover {
-    opacity: .5;
-  }
-
-  .add-cart:hover {
-    opacity: .5;
-  }
-
-  .shippings-main {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 20px 10px 0px;
-
-  }
-
-  .description-main {
-    margin-bottom: 80px;
-  }
-
-  
-</style>
 </head>
 <body>
-  <div id="header"></div>
-  <div id="desc">This should render but not the text</div>
+
+
+  <div class="container">
+     <!--  <div id="header"></div> -->
+      <div id="gallery"></div>
+      <div id="desc"></div>
+      <div id = "instagram"></div>    
+  </div>
   <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-
+  
+  <script src="http://localhost:3002/bundle.js"></script>
+  <script src="http://localhost:3004/app.js"></script>
+  <script src="http://localhost:3003/bundle.js"></script>
   <script src="http://localhost:3001/app.js"></script>
-  <!-- <script src="http://localhost:3002/bundle.js"></script> -->
+
 
   <script>
     
@@ -124,7 +32,7 @@
       document.getElementById('desc')
     );
 
-
+    
   </script>
 </body>
 </html>
