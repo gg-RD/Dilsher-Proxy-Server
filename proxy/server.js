@@ -20,7 +20,7 @@ app.get('/description/air_force_1', function(req, res){
 app.get('/flyknit', function(req, res){
         // send client side data from db to http://localhost:3003/flyknit
         const options = {
-            url: 'http://localhost:3003/flyknit'
+            url: 'http://gallery:3003/flyknit'
         }
         request(options, (error, response, body) => {
             res.send(body);
